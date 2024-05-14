@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: sakthisaransss55/portfolio:latest
+        image: sakthisaransss55/portfolio:${BUILD_NUMBER}
         resources:
           limits:
             memory: "128Mi"
