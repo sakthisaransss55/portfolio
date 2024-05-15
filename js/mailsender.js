@@ -5,7 +5,7 @@ async function send_email(name,email,subject,body){
             },
             body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body})});
         if(response.status==200){
-        alert("I Recived Your Email i'll Contact you Soon")
+        alert("I Recived Your Email I'll Contact you Soon")
         document.getElementById("formSubmit").disabled = false;
         document.getElementById("formSubmit").value="Send Message"
         }else{
