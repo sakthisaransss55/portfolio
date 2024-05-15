@@ -24,11 +24,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: portfolio
+  name: portfolioservice
 spec:
   type: ClusterIP
   selector:
-    app: myapp
+    app: portfolio
   ports:
   - port: 80
     targetPort: 80
