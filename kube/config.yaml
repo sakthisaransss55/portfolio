@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: portfolio
 spec:
+  replicas: 1
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: portfolio
@@ -16,8 +18,8 @@ spec:
         image: sakthisaransss55/portfolio:latest
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "200m"
+            memory: "100Mi"
+            cpu: "150m"
         ports:
         - containerPort: 80
 ---
