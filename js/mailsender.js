@@ -1,11 +1,11 @@
 async function send_email(name,email,subject,body){
     try {
-        const response =await fetch('https://service.sakthisaran.site/sendemail',{method:"POST", headers: {
+        const response =await fetch('https://portfolio.sakthisaran.site/server/mailservice/sendemail',{method:"POST", headers: {
             'Content-Type': 'application/json'
             },
-            body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body})});
+            body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body,"to":"sakthisaran@sakthisaran.site"})});
         if(response.status==200){
-        alert("I Recived Your Email I'll Contact you Soon")
+        alert("I Recived Your Email i'll Contact you Soon")
         document.getElementById("formSubmit").disabled = false;
         document.getElementById("formSubmit").value="Send Message"
         }else{
