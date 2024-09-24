@@ -27,9 +27,6 @@ $secondary: #a0f669;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
 body {
 	font-family: $font-primary;
 	background: $black;
@@ -72,7 +69,6 @@ h1, h2, h3, h4, h5,
 	left: 0;
 	right: 0;
 	z-index: 3;
-	// padding-top: 30px;
 	@include media-breakpoint-down(md) {
 		background: $black!important;
 		position: relative;
@@ -105,7 +101,6 @@ h1, h2, h3, h4, h5,
 	.navbar-nav {
 		@include media-breakpoint-down(md){
 			padding-bottom: 20px;
-			// margin-left: 20px !important;
 			margin-right: 0;
 		}
 		> .nav-item {
@@ -356,7 +351,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-//OWL CAROUSEL
 .owl-carousel {
 	position: relative;
 	.owl-item {
@@ -426,7 +420,6 @@ h1, h2, h3, h4, h5,
 				.one-third{
 					width: 60%;
 					position: relative;
-					// height: 650px;
 					z-index: -1;
 					.overlay{
 						position: absolute;
@@ -481,29 +474,12 @@ h1, h2, h3, h4, h5,
 							left: 0;
 							transform: translateY(-50%);
 							right: 0;
-							// width: 1200px;
 							max-width: 50%;
 							padding-left: 45px;
 							padding-right: 3em;
 						}
 					}
 				}
-				// .icon-video{
-				// 	position: absolute;
-				// 	top: 120px;
-				// 	right: 70px;
-				// 	content: '';
-				// 	width: 70px;
-				// 	height: 70px;
-				// 	background: $white;
-				// 	@include border-radius(50%);
-				// 	span{
-				// 		font-size: 20px;
-				// 		color: $black;
-				// 	}
-				// 	span.play{
-				// 	}
-				// }
 				.subheading{
 					color: $black;
 					font-weight: 600;
@@ -531,7 +507,6 @@ h1, h2, h3, h4, h5,
 					}
 					@include media-breakpoint-down(sm) {
 						font-size: 40px;
-						// color: $pri;
 					}
 				}
 				h2{
@@ -573,7 +548,6 @@ h1, h2, h3, h4, h5,
 				position: absolute;
 				width: 60px;
 				height: 60px;
-				// color: $primary !important;
 				background: $white !important;
 				@include transition(.7s);
 				span {
@@ -672,7 +646,6 @@ h1, h2, h3, h4, h5,
 		color: $white;
 		line-height: 1.2;
 		font-weight: 400;
-		// text-transform: uppercase;
 		@include media-breakpoint-down(md) {
 			font-size: 40px;
 		}
@@ -733,12 +706,9 @@ h1, h2, h3, h4, h5,
 	background: $primary;
 }
 
-
-//BUTTON
 .btn {
 	cursor: pointer;
 	@include border-radius(40px);
-	// box-shadow: none!important;
 	-webkit-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	-moz-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
@@ -811,8 +781,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
-//FTCO ABOUT
 .ftco-about{
 	.img-about{
 		width: 100%;
@@ -883,24 +851,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-//SERVICES
-// .services{
-// 	@include transition(.3s);
-// 	.icon{
-// 		line-height: 1.3;
-// 		position: relative;
-// 		span{
-// 			font-size:60px;
-// 			color: $primary;
-// 		}
-// 	}
-// 	.media-body{
-// 		h3{
-// 			font-size: 18px;
-// 			font-weight: 500;
-// 		}
-// 	}
-// }
 .services-1{
 	margin-bottom: 40px;
 	padding: 2em;
@@ -973,7 +923,7 @@ h1, h2, h3, h4, h5,
 
 
 
-//SKILLS--------------------
+//SKILLS
 .progress-wrap{
 	width: 100%;
 	margin-bottom: 30px;
@@ -1141,7 +1091,7 @@ h1, h2, h3, h4, h5,
 		content: '';
 		width: 360%;
 		background: lighten($primary,10%);
-		// background: #333644;
+
 	}
 	@include media-breakpoint-down(sm){
 		background: transparent;
@@ -1189,16 +1139,13 @@ textarea.form-control {
 //ABOUT
 .about-author{
 	@include border-radius(5px);
-	img{
-	}
+
 	.desc{
 		h3{
 			font-size: 24px;
 		}
 	}
-	.bio{
 
-	}
 }
 
 
@@ -1429,7 +1376,6 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1459,10 +1405,7 @@ textarea.form-control {
 	@include media-breakpoint-down(lg){
 		background-position: center center !important;
 	}
-	.icon{
-		span{
-		}
-	}
+
 	.block-18{
 		display: block;
 		width:100%;
@@ -1586,16 +1529,9 @@ textarea.form-control {
 
 .block-6 {
 	margin-bottom: 40px;
-	.icon {
-		span {
-			&:before {
-			}
-		}
-	}
-	.media-body {
-		.heading {
 
-		}
+	.media-body {
+
 		p {
 			font-size: 16px;
 		}
@@ -1638,7 +1574,6 @@ textarea.form-control {
 			a{
 				color: lighten($black,10%);
 			}
-			span{}
 		}
 	}
 	.box{
@@ -1683,7 +1618,6 @@ textarea.form-control {
 			a{
 				color: $white;
 			}
-			span{}
 		}
 	}
 	.contact-form{
@@ -1703,8 +1637,7 @@ textarea.form-control {
 		box-shadow: none!important;
 		font-size: 15px;
 	}
-	#map {
-	}
+
 
 }
 
