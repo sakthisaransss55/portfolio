@@ -33,3 +33,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Sitemap: https://www.sakthisaran.site/
+Sitemap: https://blog.sakthisaran.site/
