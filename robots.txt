@@ -32,5 +32,4 @@ User-agent: ia_archiver/v3.9
 Disallow: 
 User-agent: *
 Disallow: 
-Sitemap: https://www.sakthisaran.site/
-Sitemap: https://blog.sakthisaran.site/
+Sitemap: https://www.sakthisaran.in/

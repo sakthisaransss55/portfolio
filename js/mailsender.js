@@ -1,23 +1,29 @@
 async function send_email(name,email,subject,body){
     try {
-        const response =await fetch('https://portfolio.sakthisaran.site/server/mailservice/sendemail',{method:"POST", headers: {
+        const response =await fetch('https://portfolio.sakthisaran.in/server/mailservice/sendemail',{method:"POST", headers: {
             'Content-Type': 'application/json'
             },
-            body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body,"to":"sakthisaran@sakthisaran.site"})});
+            body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body,"to":"sakthisaransss55@gmail.com"})});
         if(response.status==200){
         alert("I Recived Your Email i'll Contact you Soon")
-        document.getElementById("formSubmit").disabled = false;
-        document.getElementById("formSubmit").value="Send Message"
+        resetForm();
         }else{
             alert("Something went wrong please try again later")
-            document.getElementById("formSubmit").disabled = false;
-            document.getElementById("formSubmit").value="Send Message"
-            document.getElementById("formSubmit").disabled = false;
+            resetForm();
         }
     } catch (error) {
         alert("Something went wrong please try again later")
-        document.getElementById("formSubmit").value="Send Message"
+        resetForm();
     }
+}
+
+function resetForm() {
+    document.getElementById("formSubmit").disabled = false;
+    document.getElementById("formSubmit").value="Send Message"
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('subject').value = '';
+    document.getElementById('message').value = '';
 }
 
 function handleFormSubmit(event) {
