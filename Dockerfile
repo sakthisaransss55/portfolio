@@ -1,7 +1,6 @@
 FROM --platform=linux/arm64 debian:stable-slim
 
-RUN apt update && apt upgrade
-RUN apt-get -y install nginx
+RUN apt -y update && apt -y upgrade && apt-get -y install nginx
 
 COPY . /var/www/html
 EXPOSE 80
